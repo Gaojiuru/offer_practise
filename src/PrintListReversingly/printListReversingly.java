@@ -1,6 +1,8 @@
 package PrintListReversingly;
 //输入一个链表的头结点，从尾到头反过来打印出每个结点的值
 
+import java.util.Stack;
+
 class List{
     int value;
     List next;
@@ -9,12 +11,27 @@ class List{
     }
 }
 
-class Solution{
+class Solution1{
     public static void reverselyprint(List head){
         List temp = head;
         if(temp.next != null)
             reverselyprint(temp.next);
         System.out.print(temp.value + "\t");
+    }
+}
+
+class Solution2{
+    public static void reverselyprint(List head){
+        Stack<Integer> stack = new Stack<>();
+        List temp = head;
+        while(temp != null) {
+            stack.push(temp.value);
+            temp = temp.next;
+        }
+        while(!stack.empty()) {
+            System.out.print(stack.peek() + "\t");
+            stack.pop();
+        }
     }
 }
 
@@ -27,6 +44,8 @@ public class printListReversingly {
             temp.next = list;
             temp = temp.next;
         }
-        Solution.reverselyprint(head);
+        Solution1.reverselyprint(head);
+        System.out.println();
+        Solution2.reverselyprint(head);
     }
 }
