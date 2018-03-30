@@ -1,6 +1,12 @@
 package Replace;
 //请实现一个函数，把字符串中的每个空格替换成“%20”,时间复杂度为O(n)
 
+class Solution{
+    public static String replaceSpace(StringBuffer str){
+        return str.toString().replace(" ", "%20");
+    }
+}
+
 public class replace {
     public static void main(String[] args){
         char[] init = {'W', 'e', ' ', 'a', 'r', 'e', ' ', 'h', 'a', 'p', 'p', 'y'};
@@ -33,6 +39,11 @@ public class replace {
 
         for(int k = 0; k < ch.length; k ++)
             System.out.print(ch[k]);
+
+        StringBuffer str = new StringBuffer(100);
+        str.append("We are happy");
+        str.append('\0');
+        System.out.println(Solution.replaceSpace(str));
 
     }
 }
