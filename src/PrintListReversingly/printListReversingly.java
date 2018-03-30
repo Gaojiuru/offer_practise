@@ -1,0 +1,32 @@
+package PrintListReversingly;
+//输入一个链表的头结点，从尾到头反过来打印出每个结点的值
+
+class List{
+    int value;
+    List next;
+    public List(int value){
+        this.value = value;
+    }
+}
+
+class Solution{
+    public static void reverselyprint(List head){
+        List temp = head;
+        if(temp.next != null)
+            reverselyprint(temp.next);
+        System.out.print(temp.value + "\t");
+    }
+}
+
+public class printListReversingly {
+    public static void main(String[] args){
+        List head = new List(0);
+        List temp = head;
+        for(int i = 1; i < 6; i ++){
+            List list = new List(i);
+            temp.next = list;
+            temp = temp.next;
+        }
+        Solution.reverselyprint(head);
+    }
+}
