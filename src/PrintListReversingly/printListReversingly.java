@@ -13,6 +13,10 @@ class List{
 
 class Solution1{
     public static void reverselyprint(List head){
+        if(head.next == null)
+            System.out.println(head.value);
+        if(head == null)
+            return;
         List temp = head;
         if(temp.next != null)
             reverselyprint(temp.next);
@@ -22,6 +26,10 @@ class Solution1{
 
 class Solution2{
     public static void reverselyprint(List head){
+        if(head.next == null)
+            System.out.println(head.value);
+        if(head == null)
+            return;
         Stack<Integer> stack = new Stack<>();
         List temp = head;
         while(temp != null) {
