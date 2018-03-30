@@ -6,6 +6,8 @@ public class replace {
         char[] init = {'W', 'e', ' ', 'a', 'r', 'e', ' ', 'h', 'a', 'p', 'p', 'y'};
         char[] ch = new char[50];
         System.arraycopy(init, 0, ch, 0, init.length);
+        if(init == null || ch.length < 0)
+            return;
         int originLength = init.length;
         int numberOfBlank = 0;
         int length = ch.length;
