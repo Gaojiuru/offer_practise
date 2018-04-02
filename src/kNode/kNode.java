@@ -1,22 +1,22 @@
 package kNode;
-//从链表中找出倒数第k个数
+//输入一个链表，输出该链表中倒数第k个结点
 
-class List {
-    int value;
-    List next;
+class ListNode {
+    int val;
+    ListNode next;
 
-    public List(int value) {
-        this.value = value;
+    public ListNode(int val) {
+        this.val = val;
     }
 }
 
 class Solution{
-    public static List kNode(List head, int k) {
-        if (head == null) {
+    public static ListNode kNode(ListNode head, int k) {
+        if (head == null || k == 0) {
             return null;
         } else {
-            List first = head;
-            List behind = head;
+            ListNode first = head;
+            ListNode behind = head;
 
             for(int i = 0; i < k - 1; ++i) {
                 if (first.next == null) {
@@ -39,30 +39,22 @@ class Solution{
 
 public class kNode {
     public static void main(String[] args) {
-        List head = new List(0);
-        List temp = null;
+        ListNode head = new ListNode(1);
+        ListNode temp = head;
 
-        for (int i = 1; i < 8; ++i) {
-            List add = new List(i);
-            if (i == 1) {
-                head.next = add;
-            } else {
+        for (int i = 2; i < 6; ++i) {
+            ListNode add = new ListNode(i);
                 temp.next = add;
-            }
-
             temp = add;
         }
 
         for (temp = head; temp != null; temp = temp.next) {
-            System.out.print(temp.value + "->");
+            System.out.print(temp.val + "->");
         }
 
         System.out.println();
-        if (Solution.kNode(head, 9) == null) {
-            System.out.println("The k is too large!");
-        } else {
-            System.out.println(Solution.kNode(head, 8).value);
-        }
+
+        Solution.kNode(head, 0);
     }
 
 }
