@@ -44,7 +44,7 @@ public class kNode {
 
         for (int i = 2; i < 6; ++i) {
             ListNode add = new ListNode(i);
-                temp.next = add;
+            temp.next = add;
             temp = add;
         }
 
