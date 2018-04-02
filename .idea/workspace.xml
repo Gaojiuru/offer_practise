@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e5d4f96-3621-4543-b90c-3e541ae4aba0" name="Default" comment="16">
+    <list default="true" id="7e5d4f96-3621-4543-b90c-3e541ae4aba0" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/ReverseList/ReverseList.java" afterPath="$PROJECT_DIR$/src/ReverseList/ReverseList.java" />
+      <change beforePath="$PROJECT_DIR$/src/Merge/Merge.java" afterPath="$PROJECT_DIR$/src/Merge/Merge.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Merge.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Merge.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Merge/Merge.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="194">
-              <caret line="43" column="20" lean-forward="false" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
+              <caret line="34" column="29" lean-forward="true" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
               <folding>
                 <element signature="e#145#146#0" expanded="true" />
                 <element signature="e#175#176#0" expanded="true" />
@@ -117,7 +117,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReverseList.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ReverseList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ReverseList/ReverseList.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
@@ -170,8 +170,8 @@
         <option value="$PROJECT_DIR$/src/DeleteNode/DeleteNode.java" />
         <option value="$PROJECT_DIR$/src/ReorderOddEven/ReorderOddEven.java" />
         <option value="$PROJECT_DIR$/src/kNode/kNode.java" />
-        <option value="$PROJECT_DIR$/src/Merge/Merge.java" />
         <option value="$PROJECT_DIR$/src/ReverseList/ReverseList.java" />
+        <option value="$PROJECT_DIR$/src/Merge/Merge.java" />
       </list>
     </option>
   </component>
@@ -234,7 +234,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ReverseList">
+  <component name="RunManager" selected="Application.Merge">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -420,8 +420,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.ReverseList" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Merge" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Merge" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ReverseList" />
         <item index="2" class="java.lang.String" itemvalue="Application.kNode" />
         <item index="3" class="java.lang.String" itemvalue="Application.ReorderOddEven" />
         <item index="4" class="java.lang.String" itemvalue="Application.DeleteNode" />
@@ -645,7 +645,14 @@
       <option name="project" value="LOCAL" />
       <updated>1522663876080</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="16">
+      <created>1522664032084</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1522664032084</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -967,17 +974,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Merge/Merge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="43" column="20" lean-forward="false" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
-          <folding>
-            <element signature="e#145#146#0" expanded="true" />
-            <element signature="e#175#176#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ReverseList/ReverseList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -985,6 +981,17 @@
           <folding>
             <element signature="e#128#129#0" expanded="true" />
             <element signature="e#158#159#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Merge/Merge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="34" column="29" lean-forward="true" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+          <folding>
+            <element signature="e#145#146#0" expanded="true" />
+            <element signature="e#175#176#0" expanded="true" />
           </folding>
         </state>
       </provider>
