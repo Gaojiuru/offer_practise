@@ -43,6 +43,6 @@ class solution{
 
 public class HasSubtree {
     public static void main(String[] args){
-        
+
     }
 }

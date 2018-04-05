@@ -25,7 +25,7 @@ class Solution2 {
 
 public class Fibonacci {
         public static void main(String[] args){
-            System.out.println(new Solution1().Fibonacci(30));
-            System.out.println(new Solution2().Fibonacci(30));
+            System.out.println(new Solution1().Fibonacci(1000));
+            System.out.println(new Solution2().Fibonacci(1000));
         }
 }
