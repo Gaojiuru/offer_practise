@@ -3,24 +3,42 @@ package DeleteNode;
 
 class ListNode{
     int val;
-    ListNode next;
+    ListNode next = null;
     ListNode(int val){
         this.val = val;
     }
 }
 
 class Solution{
-    public void DeleteNode(ListNode head, ListNode toBeDeleted) {
+    public ListNode DeleteNode(ListNode head, ListNode toBeDeleted) {
         if (head == null || toBeDeleted == null)
-            return;
+            return null;
         ListNode temp = head;
-        while (temp.next.val != toBeDeleted.val)
-            temp = temp.next;
+        //只有一个结点
+        if(temp.next == null){
+            if(temp.val == toBeDeleted.val)//头结点为删除节点
+                temp = null;
+            else
+                return head;
+        }
 
-        if (temp.next.next == null)
-            temp.next = null;
-        else
+        if(temp.val == toBeDeleted.val) {
+            head = temp.next;
+            //return head;
+        }
+
+        while(temp.next.next != null){
+            if(temp.next.val == toBeDeleted.val)
+                break;
+            else
+                temp = temp.next;
+        }
+
+        if(temp.next.next != null)
             temp.next = temp.next.next;
+        else if (temp.next.val == toBeDeleted.val)
+            temp.next = null;
+        return head;
     }
 }
 
@@ -41,7 +59,7 @@ public class DeleteNode {
             temp = add;
         }
 
-        new Solution().DeleteNode(head, new ListNode(7));
+        head = new Solution().DeleteNode(head, new ListNode(8));
         temp = head;
         while(temp != null) {
             System.out.print(temp.val + "->");
