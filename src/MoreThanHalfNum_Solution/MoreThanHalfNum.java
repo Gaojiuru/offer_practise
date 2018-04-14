@@ -22,13 +22,13 @@ class Solution{
                     count --;
             }
         }
-        System.out.println(result);
+
         count = 0;
         for(int i = 0; i < array.length; i ++){
             if(result == array[i])
                 count ++;
         }
-        System.out.println(count);
+
         if(count * 2 <= array.length)
             result = 0;
         return result;
