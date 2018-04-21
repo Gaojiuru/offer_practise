@@ -11,6 +11,6 @@ class Solution{
 
 public class Sum {
     public static void main(String[] args){
-        System.out.println(new Solution().Sum(3));
+        System.out.println(new Solution().Sum(1000));
     }
 }
