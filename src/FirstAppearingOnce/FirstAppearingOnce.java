@@ -30,7 +30,6 @@ public class FirstAppearingOnce {
         Solution s = new Solution();
         for(int i = 0; i < str.length(); i ++)
             s.Insert(str.charAt(i));
-
         System.out.println(s.FistAppearingOnce());
     }
 }
