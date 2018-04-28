@@ -14,7 +14,7 @@ class Solution{
             visited[i] = false;
         for(int i = 0; i < rows; i ++){
             for(int j = 0; j < cols; j ++){
-                if(Helper(matrix, i, rows, j, cols, str, pathLength, visited) == true)
+                if(Helper(matrix, i, rows, j, cols, str, pathLength, visited))
                     return true;
             }
         }
